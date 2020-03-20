@@ -1,0 +1,16 @@
+{
+  "name": "paco",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chalk": "^3.0.0",
+    "commander": "^4.1.1",
+    "inquirer": "^7.0.4",
+    "progress": "^2.0.3"
+  },
+  "bin": {
+    "paco": "./bin/index.js"
+  }
+}
