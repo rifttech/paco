@@ -3,14 +3,30 @@
   "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
+  "description": "Server Instance Managenet Tool",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rifttech/paco.git"
+  },
   "dependencies": {
     "axios": "^0.19.2",
     "chalk": "^3.0.0",
     "commander": "^4.1.1",
     "inquirer": "^7.0.4",
-    "progress": "^2.0.3"
+    "progress": "^2.0.3",
+    "unzipper": "^0.10.10"
   },
   "bin": {
     "paco": "./bin/index.js"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint": "^6.8.0",
+    "prettier": "^2.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^6.8.0",
+    "prettier": "^2.0.0"
   }
 }
