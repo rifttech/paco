@@ -12,6 +12,7 @@
         "axios": "^0.19.2",
         "chalk": "^3.0.0",
         "commander": "^4.1.1",
+        "extract-zip": "^1.6.7",
         "inquirer": "^7.0.4",
         "progress": "^2.0.3",
         "unzipper": "^0.10.10"
@@ -24,15 +25,20 @@
         "eslint-config-prettier": "^6.10.0",
         "eslint-plugin-prettier": "^3.1.2",
         "husky": "^4.2.3",
+        "jest": "^25.1.0",
         "prettier": "^2.0.0",
         "pretty-quick": "^2.0.1"
     },
     "peerDependencies": {
         "eslint": "^6.8.0",
-        "prettier": "^2.0.0"
+        "prettier": "^2.0.0",
+        "canvas": "^2.5.0",
+        "bufferutil": "^4.0.1",
+        "utf-8-validate": "^5.0.2"
     },
     "scripts": {
-        "format": "prettier --write ./lib/**/*.js ./bin/**/*.js"
+        "format": "prettier --write ./lib/**/*.js ./bin/**/*.js",
+        "test": "jest --detectOpenHandles"
     },
     "husky": {
         "hooks": {
