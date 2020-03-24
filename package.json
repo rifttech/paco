@@ -15,6 +15,8 @@
         "extract-zip": "^1.6.7",
         "inquirer": "^7.0.4",
         "progress": "^2.0.3",
+        "unzip": "^0.1.11",
+        "unzip-stream": "^0.3.0",
         "unzipper": "^0.10.10"
     },
     "bin": {
@@ -37,8 +39,12 @@
         "utf-8-validate": "^5.0.2"
     },
     "scripts": {
+        "preinstall": "npx npm-force-resolutions",
         "format": "prettier --write ./lib/**/*.js ./bin/**/*.js",
         "test": "jest --detectOpenHandles"
+    },
+    "resolutions": {
+        "graceful-fs": "4.2.3"
     },
     "husky": {
         "hooks": {
